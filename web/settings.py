@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'accounts.apps.AccountsConfig',
+    'file_to_link.apps.FileToLinkConfig',
     'core.apps.CoreConfig' ,
 
 ]
