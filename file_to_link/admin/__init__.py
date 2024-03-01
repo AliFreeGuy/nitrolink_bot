@@ -1,0 +1,1 @@
+from .setting_admin import FileToLinkSettingAdmin
