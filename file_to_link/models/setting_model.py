@@ -30,9 +30,9 @@ class FileToLinkSettingModel(models.Model):
     channel_5  = models.CharField(max_length = 248 , null = True , blank = True)
 
     def __str__(self) -> str:
-        return 'FileToLink Setting'
+        return 'Setting'
     
 
     class Meta :
-        verbose_name = "FileToLink Setting"
-        verbose_name_plural = "FileToLink Setting"
+        verbose_name = "Setting"
+        verbose_name_plural = "Setting"

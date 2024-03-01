@@ -34,7 +34,8 @@ INSTALLED_APPS = [
     'jazzmin',
     'rest_framework',
     'rest_framework.authtoken',
-    
+    'celery',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -132,7 +133,9 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'accounts.User'  # با توجه به مسیر مدل یوزر شما
 
-
+CELERY_BROKER_URL = 'redis://localhost:6379/11'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/11'
+CELERY_TIMEZONE = 'UTC'
 
 
 
