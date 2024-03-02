@@ -1,3 +1,4 @@
 from .setting_admin import FileToLinkSettingAdmin
 from .users_admin import FileToLinkUsersAdmin
 from .send_message_admin import SendMessageModelAdmin
+from .plans_admin import FileToLinkPlansAdmin
