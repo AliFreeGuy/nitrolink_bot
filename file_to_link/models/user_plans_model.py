@@ -26,6 +26,11 @@ class UserPlanModel(models.Model):
             self.link_to_file_volume = self.plan.link_to_file_volume
         super().save(*args, **kwargs)
 
+
+    class Meta :
+        verbose_name = "User Plans"
+        verbose_name_plural = "User Plans"
+
 class FileToLinkUsageModel(models.Model):
     user = models.ForeignKey(UserFileToLinkModel, on_delete=models.CASCADE, related_name='file_to_link_usage')
     date = models.DateField(auto_now_add=True)
@@ -34,6 +39,12 @@ class FileToLinkUsageModel(models.Model):
     def __str__(self):
         return f'{self.user.user} - {self.date} - File to Link Usage: {self.usage}'
 
+    class Meta :
+        verbose_name = "File To Link Usage"
+        verbose_name_plural = "File To Link Usage"
+
+
+
 class LinkToFileUsageModel(models.Model):
     user = models.ForeignKey(UserFileToLinkModel, on_delete=models.CASCADE, related_name='link_to_file_usage')
     date = models.DateField(auto_now_add=True)
@@ -41,3 +52,8 @@ class LinkToFileUsageModel(models.Model):
 
     def __str__(self):
         return f'{self.user.user} - {self.date} - Link to File Usage: {self.usage}'
+
+    class Meta :
+        verbose_name = "Link To File Usage"
+        verbose_name_plural = "Link To File Usage"
+
