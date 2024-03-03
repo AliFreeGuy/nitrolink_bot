@@ -1,8 +1,6 @@
 from file_to_link.models import FileToLinkSettingModel
 from rest_framework import serializers
-
-
-from rest_framework import serializers
+from file_to_link.models import FileToLinkPlansModel
 
 class FileToLinkSettingSerializer(serializers.ModelSerializer):
     channels = serializers.SerializerMethodField()
@@ -14,4 +12,11 @@ class FileToLinkSettingSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = FileToLinkSettingModel
+        fields = '__all__'
+
+
+
+class FileToLinkPlansSerializers(serializers.ModelSerializer):
+    class Meta :
+        model = FileToLinkPlansModel
         fields = '__all__'

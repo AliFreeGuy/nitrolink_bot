@@ -1,1 +1,2 @@
 from .filetolink_apiview import FileToLinkSettingApiView
+from .plans_apiview import FileToLinkPlansApiView
