@@ -1,2 +1,3 @@
-from .filetolink_apiview import FileToLinkSettingApiView
+from .setting_apiview import FileToLinkSettingApiView
 from .plans_apiview import FileToLinkPlansApiView
+from .users_apiview import UserUpdateAPIView
