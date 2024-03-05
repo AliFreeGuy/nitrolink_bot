@@ -27,6 +27,8 @@ class UserUpdateAPIView(APIView):
             
             user = user.first()
             
+            
+            
             if request.data.get('full_name'):
                 user.full_name = request.data.get('full_name')
                 user.save()
