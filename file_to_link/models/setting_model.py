@@ -8,12 +8,13 @@ class FileToLinkSettingModel(models.Model):
     is_active = models.BooleanField(default = True )
     not_active_text = models.TextField(default = 'خالی')
    
-    support_id = models.CharField(max_length = 128 ,default = 'خالی' )
+    support_id = models.CharField(max_length = 128 , null =True , blank = True)
     support_text= models.TextField(default = 'خالی')
     help_text = models.TextField(default = 'خالی' )
     start_text = models.TextField(default = 'خالی' )
     user_not_active_text = models.TextField(default = 'خالی')
     join_channel_text = models.TextField(default = 'خالی')
+    plans_text = models.TextField(default = 'خالی' , null = True , blank = True)
 
 
     file_to_link_status = models.BooleanField(default = True )
