@@ -27,6 +27,7 @@ def update_user_plan_file_to_link_usage(sender, instance, created, **kwargs):
                 user_plan.file_to_link_usage_to_day = total_usage_today
                 user_plan.save()
             else:
+                instance.delete()
                 raise ValidationError("Your plan does not allow for this file-to-link usage.")
         else:
             raise ValidationError("No active plan found for this user.")
@@ -47,6 +48,7 @@ def update_user_plan_link_to_file_usage(sender, instance, created, **kwargs):
                 user_plan.link_to_file_usage_to_day = total_usage_today
                 user_plan.save()
             else:
+                instance.delete()
                 raise ValidationError("Your plan does not allow for this link_to_file usage.")
         else:
             raise ValidationError("No active plan found for this user.")
