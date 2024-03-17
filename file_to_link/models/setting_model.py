@@ -16,7 +16,7 @@ class FileToLinkSettingModel(models.Model):
     join_channel_text = models.TextField(default = 'خالی')
     plans_text = models.TextField(default = 'خالی')
 
-
+    actication_sub_tex = models.TextField(null = True , blank =True)
     file_to_link_status = models.BooleanField(default = True )
     file_to_link_off_text = models.TextField(default = 'خالی')
 
