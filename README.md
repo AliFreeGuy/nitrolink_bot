@@ -1,6 +1,6 @@
 <div dir="rtl" style="text-align: right;">
 
-## ربات تلگرام تبدیل فایل به لینک و لینک به فایل
+<h1>ربات تلگرام فایل به لینک و لینک به فایل</h1>
 <br>
 <br>
 <br>
@@ -18,8 +18,7 @@
         </div>
         <div style="flex: 1; margin-left: 20px;">
             <div style="display: flex;">
-    <img src="images/demo2.gif
-    " width="800" style="margin-right: 10px;">
+    <img src="https://github.com/AliFreeGuy/nitrolink_bot/blob/master/images/demo2.gif" width="250" style="margin-right: 10px;">
 </div>
         </div>
     </div>
