@@ -57,9 +57,6 @@
 <div style="display: flex;">
     <img src="images/demo3.png" width="800" style="margin-right: 10px;">
 </div>
-
-
-<hr>
 <br>
 
 
