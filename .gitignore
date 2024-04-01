@@ -1,6 +1,5 @@
 *.temp
 workdir/
-*.mp4
 *.jpeg
 **/migrations/
 # Created by https://www.toptal.com/developers/gitignore/api/python,django,pycharm,visualstudiocode
