@@ -17,10 +17,10 @@
             </ul>
         </div>
         <div style="flex: 1; margin-left: 20px;">
-            <video width="250" controls autoplay>
-                <source src="images/demo1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div style="display: flex;">
+    <img src="images/demo2.gif
+    " width="800" style="margin-right: 10px;">
+</div>
         </div>
     </div>
 </div>
@@ -28,17 +28,6 @@
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
